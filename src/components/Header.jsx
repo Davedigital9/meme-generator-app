@@ -8,7 +8,7 @@ export default function Header() {
                 className="header--image"
             />
             <h2 className="header--title">Meme Generator</h2>
-            <h4 className="header--project">React Project </h4>
+            <h4 className="header--project">Web3Bridge React Project </h4>
         </header>
     )
 }
