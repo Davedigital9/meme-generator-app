@@ -10,10 +10,13 @@ body {
 .header {
   display: flex;
   align-items: center;
-  height: 65px;
+  height: 75px;
   background: linear-gradient(90deg, #223080 1.18%, #2640d3 100%);
   color: white;
   padding: 20px;
+  h2 {
+    font-size: 24px;
+  }
 }
 
 .header--image {
@@ -29,4 +32,39 @@ body {
 .header--project {
   font-size: 0.75rem;
   font-weight: 500;
+}
+
+.form {
+  display: grid;
+  grid-template: 100% 100% / 1fr 1fr;
+  gap: 15px;
+}
+
+.form--label {
+  margin-bottom: 5px;
+}
+
+.form--input {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+  height: 35px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.form--button {
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90.8deg, #223080 1.18%, #2640d3 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  span {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
 }
