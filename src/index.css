@@ -76,11 +76,12 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  margin-top: 25px;
 }
 
 .meme--image {
-  width: 90%; /* Limit width to 80% of the viewport or parent container */
-  max-width: 500px;
+  width: 90%; 
+  max-width: 600px;
   height: 400px; /* Fix height for the image container */
   display: flex;
   justify-content: center;
@@ -94,4 +95,37 @@ body {
     height: 100%;
     object-fit: contain; /* Maintain aspect ratio within container */
     display: block;
+}
+.meme--text {
+  position: absolute;
+  width: 90%; /* Slightly reduce the width */
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+  line-height: 10; /* Reduce line spacing */
+  padding: 5px 0; /* Reduce padding */
+}
+
+.bottom {
+  bottom: -40%; /* Adjusted to give a small gap from the bottom */
+}
+
+.top {
+  top: 30%; /* Adjusted to give a small gap from the top */
 }
